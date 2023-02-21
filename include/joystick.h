@@ -1,4 +1,5 @@
 #include "TinyTimber.h"
+#include "gui.h"
 #include <avr/io.h>
 
 //TODO Change to correct pin
@@ -15,4 +16,4 @@ typedef struct {
 
 void buttonInit(void);
 void buttonLR(ButtonHandler *this, int arg); //argument to switch gui
-void buttonUD(ButtonHandler *this, int arg);
+void buttonUDC(ButtonHandler *this, int arg);
