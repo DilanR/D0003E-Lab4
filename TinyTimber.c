@@ -37,7 +37,7 @@
  *
  */
 
-#include "TinyTimber.h"
+#include "include/TinyTimber.h"
 
 #include <setjmp.h>
 #include <avr/io.h>
