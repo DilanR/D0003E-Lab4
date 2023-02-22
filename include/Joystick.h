@@ -16,6 +16,8 @@ typedef struct {
 
 #define INITJOYSTICK(gui) {initObject(), gui} 
 
+//#define HANDELDOWN(gui) ASYNC(gui->)
+
 void buttonInit(void);
 void buttonLR(ButtonHandler *this, int arg); //argument to switch gui
 void buttonUDC(ButtonHandler *this, int arg);

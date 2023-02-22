@@ -1,5 +1,5 @@
-avr-gcc -g -Os -mmcu=atmega169 -c main.c
-avr-gcc -g -mmcu=atmega169 main.o -o main.elf
+avr-gcc -g -Os -mmcu=atmega169 -c main.c TinyTimber.c Joystick.c PulseGen.c GUI.c LCD.c
+avr-gcc -g -mmcu=atmega169 main.o TinyTimber.o Joystick.o PulseGen.o GUI.o LCD.o -o main.elf
 avr-objcopy -j .text -j .data -O ihex main.elf main.hex
 avr-size --format=avr --mcu=atmega169 main.elf 
 

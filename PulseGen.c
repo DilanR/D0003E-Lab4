@@ -1,4 +1,5 @@
 #include "include/PulseGen.h"
+#include "include/BitWriter.h"
 #include "include/TinyTimber.h"
 
 int get_freq(PulseGen *this, int arg) {
@@ -31,8 +32,11 @@ void reset_freq(PulseGen *p, int arg) {
 }
 
 void writePulse(PulseGen *this, int arg) {
-    /* READ BEFORE AFTER PRIMITIVS
-
+    // READ BEFORE AFTER PRIMITIVS
+    if (this->freq) {
+       *(this->reg) ^= this->PIN;
+       AFTER(MSEC(1000/this->freq), this, writePulse, 0);
+    }
 
 }
 
