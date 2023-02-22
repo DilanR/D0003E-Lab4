@@ -1,0 +1,11 @@
+{
+  "files.associations": {
+    "random": "c",
+    "setjmp.h": "c",
+    "tinytimber.h": "c",
+    "joystick.h": "c",
+    "pulsegen.h": "c",
+    "gui.h": "c",
+    "lcd.h": "c"
+  }
+}

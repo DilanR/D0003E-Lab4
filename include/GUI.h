@@ -13,3 +13,4 @@ typedef struct {
 
 void switchState();
 int getState(GUI *this);
+void printFreq(GUI *this, int arg);
