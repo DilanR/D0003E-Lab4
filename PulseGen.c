@@ -29,3 +29,10 @@ void reset_freq(PulseGen *p, int arg) {
         p->freq = (p->prevFreq == NULL) ? 0 : p->prevFreq;
     }
 }
+
+void writePulse(PulseGen *this, int arg) {
+    /* READ BEFORE AFTER PRIMITIVS
+
+
+}
+

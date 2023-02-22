@@ -1,18 +1,20 @@
 #include "TinyTimber.h"
-#include "gui.h"
+#include "GUI.h"
 #include <avr/io.h>
 
 //TODO Change to correct pin
-#define UP PINB7
 #define DOWN PINB7
-#define RIGHT PINB7
-#define LEFT PINB7
-#define CENTER PINB7
+#define UP PINB6
+#define CENTER PINB4
+#define RIGHT PINE2
+#define LEFT PINE3
 
 typedef struct {
     Object super;
     GUI *gui; //TODO gui
 }ButtonHandler;
+
+#define INITJOYSTICK(gui) {initObject(), gui} 
 
 void buttonInit(void);
 void buttonLR(ButtonHandler *this, int arg); //argument to switch gui

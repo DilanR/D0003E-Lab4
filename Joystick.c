@@ -15,5 +15,4 @@ void buttonLR(ButtonHandler *this, int arg) {
 
 void buttonUDP(ButtonHandler *this, int arg) {
     //call PulseGen methods
-
 }

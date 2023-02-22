@@ -20,5 +20,6 @@ void dec_freq(PulseGen *p, int arg);
 int get_freq(PulseGen *this, int arg);
 int get_index(PulseGen *this, int arg);
 void reset_freq(PulseGen *p, int arg);
+void writePulse(PulseGen *this, arg);
 
 #endif
